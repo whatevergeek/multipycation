@@ -28,7 +28,7 @@ jobs:
 
   - script: |
       pip install pytest
-      pytest test_arithmetic_properties_with_randomized_inputs.py --doctest-modules --junitxml=junit/test-results.xml
+      pytest test_arithmetic_properties_with_randomized_inputs.py --doctest-modules --hypothesis-show-statistics --junitxml=junit/test-results.xml
     displayName: 'pytest'
 
   - task: PublishTestResults@2
